@@ -1,0 +1,124 @@
+:root {
+  --blanco: #ffffff;
+  --osucro: #212121;
+  --primario: #ffc107;
+  --secundario: #0097a7;
+  --gris: #757575;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /* Hack para box model*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 16px;
+  font-family: "Krub", sans-serif;
+}
+
+h1 {
+  font-size: 3.8 rem;
+}
+h2 {
+  font-size: 2.8 rem;
+}
+h3 {
+  font-size: 1.8 rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.titulo span {
+  font-size: 2rem;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.boton {
+  background-color: var(--secundario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+}
+@media (min-width: 480px) {
+  .boton {
+    width: auto;
+  }
+}
+
+.div-bg {
+  background-color: var(--secundario);
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.navegacion-principal a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1rem;
+}
+.navegacion-principal a:hover {
+  background-color: var(--primario);
+  color: var(--osucro);
+}
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+}
+
+.contenido-hero {
+  position: absolute;
+  background-color: rgba(0 0 0 /65%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+  color: var(--blanco);
+}
+.icon-hero {
+  color: var(--primario);
+}
+.ubicacion {
+  display: flex;
+  align-items: flex-end;
+}
